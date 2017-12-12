@@ -1,0 +1,243 @@
+/*!
+ * Custom styles for KLRN Landing Page
+ */
+ 
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0.8em 0 0.4em;
+}
+
+h1, #main h2 {
+  color: #7295a2; 
+  color: #6d93a1;  
+  color: #888;
+}
+
+h2 {
+  margin: 1em 0 0; 
+} 
+
+h2.option_default {
+  margin-top: 50%; 
+}  
+
+p.lead {
+  font-size: 1.1em;
+}
+
+.btn {  
+  padding: 0.7em 1.3em 0.83em;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 1.1em;
+}  
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #0b92c5;
+    background-position: 0 -15px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0b92c5;
+    border-color: #1a86ae;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom, #00aaeb 0, #0b92c5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00aaeb', endColorstr='#ff0b92c5', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #0b92c5;
+    border-color: #1a86ae;
+
+}
+
+.navbar-default, .navbar-inverse {
+  border-radius: 0;  
+}
+
+.navbar-default {
+  /* background-image: linear-gradient(to bottom, #ffffff 0%, #eee 100%); */    
+}
+
+.navbar-brand img { 
+  margin: 2px 0;
+  width: 100px; 
+  height: auto; 
+ 
+}
+
+.jumbotron {
+  position: relative;
+  border-top: 2px solid #666;
+  border-bottom: 2px solid #666;
+  background-color: #222;
+  padding: 1.5% 0% 20px;
+  text-align: center;
+  
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;    
+  box-shadow: 0px 4px 15px #ccc;    
+  box-shadow: 0px 1px 10px #ccc;  
+}
+
+.jumbotron::after {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../img/Poldark.jpg) no-repeat center center / cover;
+    content: "";
+    opacity: 0.65;
+    opacity: 0.9;
+    
+    /*        outline hlen vlen  blur  spread    color */
+    box-shadow: inset 0px -150px 100px 100px rgba(34,34,34,0.25);
+    box-shadow: inset 0px -225px 250px 0px rgba(34,34,34,0.4);    
+}
+
+.jumbotron.text-align_right {
+  text-align: right;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron .container h2 {
+  color: #f7ee05;
+  text-shadow: 1px 1px 5px #222;
+}
+
+.jumbotron #passport_logo {
+  width: 300px;
+  max-width: 95%;
+  height: auto;
+  text-shadow: 10px 10px 5px #222;
+}
+
+.jumbotron #cta_button {
+  position: relative;
+  display: inline-block;
+  margin: 0.3em 0 0;
+  border: 3px solid #fff;
+  padding: 0.7em 1.2em;
+  color: #fff;  
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #222;
+}
+
+.jumbotron #cta_button::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background: #00aaeb;
+    content: "";
+    opacity: 0.40;
+}
+
+.jumbotron #cta_button:hover ,
+.jumbotron #cta_button:active, 
+.jumbotron #cta_button:focus {
+  text-decoration: none;
+}
+
+.jumbotron #cta_button:hover::after {
+    opacity: 0.60;
+}
+
+/* STYLES FOR VARIOUS CONTENT OPTIONS =================================================================================== */
+
+h2.option_header {
+  margin: 0 0 6em;
+  font-size: 1.975em;
+  opacity: 0;
+}
+
+.jumbotron #cta_button.option_header {  
+  margin-top: 0;
+}
+
+.option_default {
+  display: none;
+}  
+
+footer p {
+  margin-top: 0;
+}
+
+/* MEDIA QUERY STYLES =================================================================================== */
+
+@media screen and (min-width: 800px) {
+  
+  h1 {
+    font-size: 2.2em;
+  }
+  
+  h2.option_default {
+    margin-top: 0.83em; 
+  } 
+  
+  h2.option_header {
+    margin: 0 0 0.4em;
+  }
+
+  .jumbotron {
+    padding: 19% 0 1.9%;
+    text-align: right;
+  }
+
+  .jumbotron #passport_logo {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .jumbotron #cta_button.option_header {  
+    margin-top: 0.67em;
+    margin-top: 0.6em;
+  }  
+  
+}
+
+@media screen and (min-width: 980px) {
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  p.lead {
+    font-size: 1.2em;
+  }
+  
+  .jumbotron #passport_logo { 
+      width: 380px;
+  }
+  
+  .jumbotron #cta_button {
+    font-size: 19px;
+  }
+  
+  h2.option_header {
+    font-size: 2.5em;
+  }
+  
+}
+
+/* Boostrap md screen */
+@media screen and (min-width: 992px) { 
+  
+  #main h2 {
+      margin: 0.83em 0 0.7em;
+  }
+  
+}

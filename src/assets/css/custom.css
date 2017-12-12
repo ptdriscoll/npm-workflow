@@ -1,0 +1,94 @@
+/*
+ * styles for passport-launch campaign
+ */
+
+.passport-launch h2.option_header {
+  opacity: 1 ;
+} 
+
+@media screen and (min-width: 650px) {
+    .passport-launch  h2.option_header { margin: 6em 0 0.4em; }
+}
+
+@media screen and (min-width: 800px) {
+    .passport-launch  h2.option_header { margin: 0 0 0.4em; }
+}
+ 
+.selfridge .jumbotron::after {
+    background: url(../img-passport-launch/selfridge.jpg) no-repeat center center / cover;
+}
+.koko .jumbotron::after {
+    background: url(../img-passport-launch/koko.jpg) no-repeat center center / cover;
+}  
+.antiques .jumbotron::after {
+    background: url(../img-passport-launch/antiques.jpg) no-repeat center center / cover;
+} 
+.ray-charles .jumbotron::after {
+    background: url(../img-passport-launch/ray-charles.jpg) no-repeat center center / cover;
+}
+.hawk .jumbotron::after {
+    background: url(../img-passport-launch/hawk.jpg) no-repeat center center / cover;
+}  
+.downton .jumbotron::after {
+    background: url(../img-passport-launch/downton.jpg) no-repeat center center / cover;
+}  
+.dancers .jumbotron::after {
+    background: url(../img-passport-launch/dancers.jpg) no-repeat center center / cover;
+}  
+
+@media screen and (min-width: 650px) {
+  .selfridge .jumbotron { text-align: left; }  
+  .koko .jumbotron { text-align: left; }
+  .antiques .jumbotron { text-align: left; }
+  .ray-charles .jumbotron { text-align: right; }
+  .hawk .jumbotron { text-align: left; }
+  .downton .jumbotron { text-align: left; }
+  .dancers .jumbotron { text-align: left; }
+}
+
+/*
+ * styles for passport-2017 campaigns
+ */
+.endeavour .jumbotron::after {
+    background: url(../img-passport-2017/Endeavour.jpg) no-repeat left top / cover;
+} 
+.vietnam-war .jumbotron::after {
+    background: url(../img-passport-2017/Vietnam-War.jpg) no-repeat left top / cover;
+} 
+.great-british-baking-show .jumbotron::after {
+    background: url(../img-passport-2017/Great-British-Baking-Show.jpg) no-repeat center center / cover;
+}
+.call-the-midwife .jumbotron::after {
+    background: url(../img-passport-2017/Call-the-Midwife.jpg) no-repeat center center / cover;
+}  
+.home-fires .jumbotron::after {
+    background: url(../img-passport-2017/Home-Fires.jpg) no-repeat center top / cover;
+} 
+.the-tunnel .jumbotron::after {
+    background: url(../img-passport-2017/The-Tunnel.jpg) no-repeat center center / cover;
+}
+.poldark .jumbotron::after {
+    background: url(../img-passport-2017/Poldark.jpg) no-repeat center center / cover;
+}  
+.origami .jumbotron::after {
+    background: url(../img-passport-2017/Origami.jpg) no-repeat center bottom / cover;
+}  
+.victoria .jumbotron::after {
+    background: url(../img-passport-2017/Victoria.jpg) no-repeat left top / cover;
+}
+
+@media screen and (min-width: 650px) {
+  .endeavour .jumbotron { text-align: left; } 
+  .vietnam-war .jumbotron { text-align: right; } 
+  .great-british-baking-show .jumbotron { text-align: right; }  
+  .call-the-midwife .jumbotron { text-align: right; }
+  .home-fires .jumbotron { text-align: right; } 
+  .the-tunnel .jumbotron { text-align: right; } 
+  .poldark .jumbotron { text-align: right; }
+  .origami .jumbotron { text-align: left; }
+  .victoria .jumbotron { text-align: right; }
+}
+@media screen and (min-width: 650px) {
+  .vietnam-war .jumbotron { padding-top: 25%; }
+}
+

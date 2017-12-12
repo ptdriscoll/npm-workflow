@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="google-site-verification" content="0RONgESHQ4dbMpBb_dbgCfKUyo2PeiyIOoJUb3S642k" />
+    <meta name="description" content="">
+    <meta name="author" content="KLRN Passport provides access to a catalog of PBS programs that you can watch on-demand from your computer, tablet, smartphone, AppleTV or Roku.">
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>KLRN Passport is an added benefit for valued PBS donors</title>
+
+    <!-- CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->   
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <!--<a class="navbar-brand" href="#"><img src="assets/img/KLRN_logo_2015_new.png"></a>-->
+          <a class="navbar-brand" href="http://www.klrn.org/home/">
+            <img src="assets/img/klrn-color-logo-nRlTb9f.png.resize.250x150.png">
+          </a>          
+        </div>
+      </div>
+    </nav>
+    
+    <!-- ==================================== -->
+    <!-- START CUT HERE FOR INDEX.PHP PARTIAL -->
+    <!-- ==================================== -->
+    
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+      <h2 class="option_header"><?php echo $subHead; ?></h2>
+        <img id="passport_logo" src="assets/img/Passport_Station_Letters_WHITE_web.png">
+        <h2 class="option_default">YOUR FAVORITES<br>
+        YOUR CONVENIENCE</h2>
+        <p><a id="cta_button" class="option_header" href="<?php echo $linkConversion; ?>" role="button">Get Access Now &raquo;</a></p>
+      </div>
+    </div>
+
+    <div id="main" class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-sm-12">
+          <h1><?php echo $headline; ?></h1>
+          <p class="lead">With KLRN Passport, you can access past episodes of your favorite PBS programs whenever you want using your computer, smartphone, tablet, AppleTV or Roku. See full seasons of the Great British Baking Show, Call the Midwife, Home Fires, Endeavour, The Tunnel, Poldark, Victoria and Downton Abbey. Catch up on American Experience, NOVA, Nature and Antiques Roadshow.</p>
+          <p class="lead">Get access to KLRN Passport for a year with a one-time contribution of $60. Or sign up to be a KLRN sustainer and receive Passport uninterrupted at $5 a month. How you give is up to you!</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Get Started</h2>
+          <p>Become a KLRN member and get instant access to extended on-demand programs, when you want.</p>
+          <p>
+            <a class="btn btn-primary" href="<?php echo $linkConversion; ?>" role="button">Donate Now &raquo;</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2>Learn More</h2>
+          <p>KLRN Passport is an added benefit for valued donors of public television. Find out more about this benefit.</p>
+          <p><a class="btn btn-primary" href="http://www.klrn.org/passport/" role="button">Learn More &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Contact Us</h2>
+          <p>Still have questions about KLRN membership or Passport? Please contact us during business hours.</p>
+          <p><a class="btn btn-primary" href="mailto:members@klrn.org?cc=pr@klrn.org&subject=KLRN%20Passport" role="button">Contact Us &raquo;</a></p>
+        </div>
+      </div><!-- .row -->      
+    </div> <!-- #main.container -->   
+    
+    <!-- ================================== -->
+    <!-- END CUT HERE FOR INDEX.PHP PARTIAL --> 
+    <!-- ================================== -->    
+
+    <footer>
+      <div class="container">
+        <hr>
+        <p>&copy; KLRN 2016</p>
+      </div>  
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/scripts.js"></script> 
+    <script type="text/javascript">
+    
+    //these are only for testing customizations
+    (function() {    
+    
+      //add class names to body, based on URL campaign values, and sorted to match php template 
+      var params = location.search.slice(1).split('&'),
+          sorting = ['utm_campaign', 'utm_source', 'utm_medium', 'utm_content'],
+          result = [],
+          bodyClasses = 'passport';
+          
+      var custom_content = {
+            'Selfridge': [
+                'endless entertainment'
+            ],
+            'Koko': [
+                'endless discovery'
+            ],
+            'Antiques': [
+                'endless discovery'
+            ],
+            'Ray-Charles': [
+                'endless entertainment'
+            ],
+            'Hawk': [
+              'endless exploration'
+            ],
+            'Downton': [
+                'endless entertainment'
+            ],
+            'Dancers': [
+                'endless inspiration'
+            ],
+            'Endeavour': [
+                'endless entertainment',
+                'Because good TV should be available whenever you want it'
+            ], 
+            'Vietnam-War': [
+                'endless exploration',
+                'Because sometimes you don\'t want to wait for the next episode'
+            ],            
+            'Great-British-Baking-Show': [
+                'endless entertainment',
+                'Great TV available on YOUR time'
+            ],
+            'Call-the-Midwife': [
+                'endless entertainment',
+                'Because good TV should be available whenever you want it'
+            ],
+            'Home-Fires': [
+                'endless entertainment',
+                'Because sometimes you need to watch it again'
+            ],
+            'The-Tunnel': [
+                'endless entertainment',
+                'Because sometimes you need to watch it again'
+            ],
+            'Poldark': [
+                'endless entertainment',
+                'Because it is worth watching again'
+            ],
+            'Origami': [
+                'endless inspiration',
+                'Because good TV should be available whenever you want it'
+            ],
+            'Victoria': [
+                'endless inspiration',
+                'Because sometimes you need to watch it again'
+            ]
+          };
+          
+          var subhead = 'endless entertainment';
+          var headline = 'On-demand access to quality PBS programs. On your schedule.';
+
+      result = params.map(function(param) {
+        var label = param.split('=')[0],
+            value = param.split('=')[1],
+            i = sorting.indexOf(label);
+            
+        if (label === 'utm_content') {
+            if (custom_content[value][0]) subhead = custom_content[value][0];
+            if (custom_content[value][1]) headline = custom_content[value][1];
+        }
+        
+        sorting[i] = '';
+        return [i, value]
+      }).sort().map(function(j) { return j[1] }); 
+
+      result.forEach(function(item){
+        if(item) bodyClasses += ' ' + item.toLowerCase();  
+      });
+
+      document.getElementsByTagName('body')[0].className += ' ' + bodyClasses; 
+      document.querySelector('.jumbotron h2').innerHTML = subhead;
+      document.querySelector('#main h1').innerHTML = headline;
+    }());
+  </script> 
+     
+  </body>
+</html>

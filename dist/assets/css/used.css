@@ -1,0 +1,568 @@
+/*** uncss> filename: dist/assets/css/styles.css ***/
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=a3f32028ddb7b1db222834cde649d71d)
+ * Config saved to config.json and https://gist.github.com/a3f32028ddb7b1db222834cde649d71d
+ */
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+footer,
+nav {
+  display: block;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+img {
+  border: 0;
+}
+hr {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+img {
+  vertical-align: middle;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+[role="button"] {
+  cursor: pointer;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-md-4, .col-sm-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-4 {
+    float: left;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.btn:focus,
+.btn:active:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.btn:active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn-primary:focus {
+  color: #ffffff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn-primary:active {
+  color: #ffffff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn-primary:active:hover,
+.btn-primary:active:focus {
+  color: #ffffff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+.btn-primary:active {
+  background-image: none;
+}
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.row:after {
+  clear: both;
+}
+
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+/*!
+ * Custom styles for KLRN Landing Page
+ */
+ 
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0.8em 0 0.4em;
+}
+
+h1, #main h2 {
+  color: #7295a2; 
+  color: #6d93a1;  
+  color: #888;
+}
+
+h2 {
+  margin: 1em 0 0; 
+} 
+
+h2.option_default {
+  margin-top: 50%; 
+}  
+
+p.lead {
+  font-size: 1.1em;
+}
+
+.btn {  
+  padding: 0.7em 1.3em 0.83em;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 1.1em;
+}  
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #0b92c5;
+    background-position: 0 -15px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0b92c5;
+    border-color: #1a86ae;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom, #00aaeb 0, #0b92c5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00aaeb', endColorstr='#ff0b92c5', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #0b92c5;
+    border-color: #1a86ae;
+
+}
+
+.navbar-default {
+  border-radius: 0;  
+}
+
+.navbar-default {
+  /* background-image: linear-gradient(to bottom, #ffffff 0%, #eee 100%); */    
+}
+
+.navbar-brand img { 
+  margin: 2px 0;
+  width: 100px; 
+  height: auto; 
+ 
+}
+
+.jumbotron {
+  position: relative;
+  border-top: 2px solid #666;
+  border-bottom: 2px solid #666;
+  background-color: #222;
+  padding: 1.5% 0% 20px;
+  text-align: center;
+  
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;    
+  box-shadow: 0px 4px 15px #ccc;    
+  box-shadow: 0px 1px 10px #ccc;  
+}
+
+.jumbotron::after {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../img/Poldark.jpg) no-repeat center center / cover;
+    content: "";
+    opacity: 0.65;
+    opacity: 0.9;
+    
+    /*        outline hlen vlen  blur  spread    color */
+    box-shadow: inset 0px -150px 100px 100px rgba(34,34,34,0.25);
+    box-shadow: inset 0px -225px 250px 0px rgba(34,34,34,0.4);    
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron .container h2 {
+  color: #f7ee05;
+  text-shadow: 1px 1px 5px #222;
+}
+
+.jumbotron #passport_logo {
+  width: 300px;
+  max-width: 95%;
+  height: auto;
+  text-shadow: 10px 10px 5px #222;
+}
+
+.jumbotron #cta_button {
+  position: relative;
+  display: inline-block;
+  margin: 0.3em 0 0;
+  border: 3px solid #fff;
+  padding: 0.7em 1.2em;
+  color: #fff;  
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #222;
+}
+
+.jumbotron #cta_button::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background: #00aaeb;
+    content: "";
+    opacity: 0.40;
+}
+
+.jumbotron #cta_button:hover,
+.jumbotron #cta_button:active,
+.jumbotron #cta_button:focus {
+  text-decoration: none;
+}
+
+.jumbotron #cta_button:hover::after {
+    opacity: 0.60;
+}
+
+/* STYLES FOR VARIOUS CONTENT OPTIONS =================================================================================== */
+
+h2.option_header {
+  margin: 0 0 6em;
+  font-size: 1.975em;
+  opacity: 0;
+}
+
+.jumbotron #cta_button.option_header {  
+  margin-top: 0;
+}
+
+.option_default {
+  display: none;
+}  
+
+footer p {
+  margin-top: 0;
+}
+
+/* MEDIA QUERY STYLES =================================================================================== */
+
+@media screen and (min-width: 800px) {
+  
+  h1 {
+    font-size: 2.2em;
+  }
+  
+  h2.option_default {
+    margin-top: 0.83em; 
+  } 
+  
+  h2.option_header {
+    margin: 0 0 0.4em;
+  }
+
+  .jumbotron {
+    padding: 19% 0 1.9%;
+    text-align: right;
+  }
+
+  .jumbotron #passport_logo {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .jumbotron #cta_button.option_header {  
+    margin-top: 0.67em;
+    margin-top: 0.6em;
+  }  
+  
+}
+
+@media screen and (min-width: 980px) {
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  p.lead {
+    font-size: 1.2em;
+  }
+  
+  .jumbotron #passport_logo { 
+      width: 380px;
+  }
+  
+  .jumbotron #cta_button {
+    font-size: 19px;
+  }
+  
+  h2.option_header {
+    font-size: 2.5em;
+  }
+  
+}
+
+/* Boostrap md screen */
+@media screen and (min-width: 992px) { 
+  
+  #main h2 {
+      margin: 0.83em 0 0.7em;
+  }
+  
+}
+
+/*
+ * styles for passport-launch campaign
+ */
+
+.passport-launch h2.option_header {
+  opacity: 1 ;
+} 
+
+@media screen and (min-width: 650px) {
+    .passport-launch  h2.option_header { margin: 6em 0 0.4em; }
+}
+
+@media screen and (min-width: 800px) {
+    .passport-launch  h2.option_header { margin: 0 0 0.4em; }
+}
+ 
+.selfridge .jumbotron::after {
+    background: url(../img-passport-launch/selfridge.jpg) no-repeat center center / cover;
+}
+.koko .jumbotron::after {
+    background: url(../img-passport-launch/koko.jpg) no-repeat center center / cover;
+}  
+.antiques .jumbotron::after {
+    background: url(../img-passport-launch/antiques.jpg) no-repeat center center / cover;
+} 
+.ray-charles .jumbotron::after {
+    background: url(../img-passport-launch/ray-charles.jpg) no-repeat center center / cover;
+}
+.hawk .jumbotron::after {
+    background: url(../img-passport-launch/hawk.jpg) no-repeat center center / cover;
+}  
+.downton .jumbotron::after {
+    background: url(../img-passport-launch/downton.jpg) no-repeat center center / cover;
+}  
+.dancers .jumbotron::after {
+    background: url(../img-passport-launch/dancers.jpg) no-repeat center center / cover;
+}  
+
+@media screen and (min-width: 650px) {
+  .selfridge .jumbotron { text-align: left; }  
+  .koko .jumbotron { text-align: left; }
+  .antiques .jumbotron { text-align: left; }
+  .ray-charles .jumbotron { text-align: right; }
+  .hawk .jumbotron { text-align: left; }
+  .downton .jumbotron { text-align: left; }
+  .dancers .jumbotron { text-align: left; }
+}
+
+/*
+ * styles for passport-2017 campaigns
+ */
+.endeavour .jumbotron::after {
+    background: url(../img-passport-2017/Endeavour.jpg) no-repeat left top / cover;
+} 
+.vietnam-war .jumbotron::after {
+    background: url(../img-passport-2017/Vietnam-War.jpg) no-repeat left top / cover;
+} 
+.great-british-baking-show .jumbotron::after {
+    background: url(../img-passport-2017/Great-British-Baking-Show.jpg) no-repeat center center / cover;
+}
+.call-the-midwife .jumbotron::after {
+    background: url(../img-passport-2017/Call-the-Midwife.jpg) no-repeat center center / cover;
+}  
+.home-fires .jumbotron::after {
+    background: url(../img-passport-2017/Home-Fires.jpg) no-repeat center top / cover;
+} 
+.the-tunnel .jumbotron::after {
+    background: url(../img-passport-2017/The-Tunnel.jpg) no-repeat center center / cover;
+}
+.poldark .jumbotron::after {
+    background: url(../img-passport-2017/Poldark.jpg) no-repeat center center / cover;
+}  
+.origami .jumbotron::after {
+    background: url(../img-passport-2017/Origami.jpg) no-repeat center bottom / cover;
+}  
+.victoria .jumbotron::after {
+    background: url(../img-passport-2017/Victoria.jpg) no-repeat left top / cover;
+}
+
+@media screen and (min-width: 650px) {
+  .endeavour .jumbotron { text-align: left; } 
+  .vietnam-war .jumbotron { text-align: right; } 
+  .great-british-baking-show .jumbotron { text-align: right; }  
+  .call-the-midwife .jumbotron { text-align: right; }
+  .home-fires .jumbotron { text-align: right; } 
+  .the-tunnel .jumbotron { text-align: right; } 
+  .poldark .jumbotron { text-align: right; }
+  .origami .jumbotron { text-align: left; }
+  .victoria .jumbotron { text-align: right; }
+}
+@media screen and (min-width: 650px) {
+  .vietnam-war .jumbotron { padding-top: 25%; }
+}
+
