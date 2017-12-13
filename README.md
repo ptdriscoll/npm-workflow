@@ -49,6 +49,21 @@ ANOTHER NOTE: `uncss` is run before appending the custom.css, because the dynami
 
 `npm run build` will copy index.html and the images, concat, compress and clean the JavaScript and CSS, put everything in a dist folder, start another server on port 8088 and open the production web page in a Chrome browswer.  
 
+### Adding a new campaign
+
+1. Create a new image folder with a unique name in src\assets and add hero images
+2. Add custom labels and titles to the `custom_content` JavaScript object in src/index.html
+3. Create a Google Analytics campaign code for each piece of content:
+...For example: ?utm_source=facebook&utm_medium=cpc&utm_campaign=Passport-2017&utm_content=Victoria
+...Make sure the UTM parameter for the campaign name has "Passport" in it, for example: utm_campaign=Passport-2017
+...Make sure the UTM parameters for content matches the object keys in the `custom_content` object in src/index.html: for example: &utm_content=Victoria 
+4. Edit src/assets/css/custom.css to pull in the hero images, align labels and titles, etc., using classes matchng URL UTM values, which get added to the body tag
+
+### Adding content to an existing campaign
+
+1. Add new hero images to campaign's unique folder in src/assets/
+2. Follow steps 2-4 in "Adding a new campaign"
+
 ### References
 
 - https://getbootstrap.com/
@@ -63,3 +78,4 @@ ANOTHER NOTE: `uncss` is run before appending the custom.css, because the dynami
 - https://www.npmjs.com/package/postcss-cli
 - https://www.npmjs.com/package/uglify-js
 - https://www.npmjs.com/package/uncss
+- https://support.google.com/analytics/answer/1033863?hl=en
