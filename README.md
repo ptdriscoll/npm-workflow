@@ -55,7 +55,7 @@ ANOTHER NOTE: `uncss` is run before appending the custom.css, because the dynami
 2. Add custom labels and titles to the `custom_content` JavaScript object in src/index.html
 3. Create a Google Analytics campaign code for each piece of content:
    - For example: **?utm_source=facebook&utm_medium=cpc&utm_campaign=Passport-2017&utm_content=Victoria**
-   - Make sure the UTM parameter for the campaign name has "Passport" in it: **utm_campaign=Passport-2017**
+   - Make sure the UTM parameter for the campaign name has "Passport" in it: **&utm_campaign=Passport-2017**
    - Make sure the content parameters match the keys in `custom_content`: **&utm_content=Victoria**
 4. Edit src/assets/css/custom.css to pull in the hero images, align labels and titles, etc., using classes matchng URL UTM values, which get added to the body tag
 
