@@ -55,7 +55,7 @@
       <div class="row">
         <div class="col-sm-12">
           <h1><?php echo $headline; ?></h1>
-          <p class="lead">With KLRN Passport, you can access past episodes of your favorite PBS programs whenever you want using your computer, smartphone, tablet, AppleTV or Roku. See full seasons of the Great British Baking Show, Call the Midwife, Home Fires, Endeavour, The Tunnel, Poldark, Victoria and Downton Abbey. Catch up on American Experience, NOVA, Nature and Antiques Roadshow.</p>
+          <p class="lead">With KLRN Passport, you can access past episodes of your favorite PBS programs whenever you want using your computer, smartphone, tablet, AppleTV or Roku. See full seasons of Victoria, Poldark, Finding Your Roots, the Great British Baking Show, Call the Midwife, Home Fires, Endeavour, The Tunnel and Downton Abbey. Catch up on American Experience, NOVA and Nature.</p>
           <p class="lead">Get access to KLRN Passport for a year with a one-time contribution of $60. Or sign up to be a KLRN sustainer and receive Passport uninterrupted at $5 a month. How you give is up to you!</p>
         </div>
         <div class="col-md-4">
@@ -174,8 +174,10 @@
             i = sorting.indexOf(label);
             
         if (label === 'utm_content') {
-            if (custom_content[value][0]) subhead = custom_content[value][0];
-            if (custom_content[value][1]) headline = custom_content[value][1];
+		    if (custom_content[value]) {
+				if (custom_content[value][0]) subhead = custom_content[value][0];
+				if (custom_content[value][1]) console.log('2 READ'); headline = custom_content[value][1];
+			}
         }
         
         sorting[i] = '';

@@ -27,17 +27,17 @@ Dependent CSS files are put in src/assets/css/ and custom CSS is added to custom
 
 Each campaign has its own folder for hero images, created in src/assets/ - the image paths are added in src/assets/css/custom.css.  
 
-`npm start` will run browserfiy to compile the JavaScript, and live-server to start a live-reload server on port 8080 and open the development web page in a Chrome browswer.
+`npm start` will run browserify to compile the JavaScript, and live-server to start a live-reload server on port 8080 and open the development web page in a Chrome browswer.
 
 ### Build
 
-Each new image folder for a campaign should be listed in the `prod:setup-custom` command in scripts in package.json, so that they're reproduced in production. For example, here is the command with folders for Passport-Launch and Passport-2017:  
+Each new image folder for a campaign should be listed in the `prod:setup-custom` command in scripts in package.json, so that they're reproduced in production (though folders can be omitted if they were copied in a previous build, and if no changes were made to the images). For example, here is the command with folders for Passport-Launch and Passport-2017:  
 
 ```
 "prod:setup-custom": "mkdirp dist/assets/img-passport-launch dist/assets/img-passport-2017",
 ``` 
     
-Each campaign's image folder must also have a unique npm command to copy images to production. For example, here's the command for the img-passport-2017 folder:
+Each campaign's image folder must also have a unique npm command to copy images to production (but a folder can be skipped if it was copied in a previous build, and if no changes were made to the images). For example, here's the command for the img-passport-2017 folder:
 
 ```
 "prod:copy-images-custom-2017": "copy src\\assets\\img-passport-2017\\* dist\\assets\\img-passport-2017\\",

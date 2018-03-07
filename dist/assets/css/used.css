@@ -566,3 +566,36 @@ footer p {
   .vietnam-war .jumbotron { padding-top: 25%; }
 }
 
+/*
+ * styles for passport-2018-10 campaigns
+ */
+ 
+.downton .jumbotron::after {
+    background: url(../img-passport-2018-02/Downton.jpg) no-repeat center top / cover;
+} 
+.finding-your-roots .jumbotron::after {
+    background: url(../img-passport-2018-02/Finding-Your-Roots.jpg) no-repeat center top / cover;
+}
+.nova .jumbotron::after {
+    background: url(../img-passport-2018-02/NOVA.jpg) no-repeat center center / cover;
+}
+.poldark .jumbotron::after {
+    background: url(../img-passport-2018-02/Poldark.jpg) no-repeat center top / cover;
+}
+.see-more .jumbotron::after,
+.button-1 .jumbotron::after,
+.button-2 .jumbotron::after,
+.victoria .jumbotron::after {
+    background: url(../img-passport-2018-02/Victoria.jpg) no-repeat center top / cover;
+}   
+ 
+@media screen and (min-width: 650px) {
+  .downton .jumbotron { text-align: right; }  
+  .finding-your-roots .jumbotron { text-align: left; }
+  .nova .jumbotron { text-align: left; }
+  .poldark .jumbotron { text-align: right; }
+  .see-more .jumbotron,
+  .button-1 .jumbotron,
+  .button-2 .jumbotron,
+  .victoria .jumbotron { text-align: left; }
+}
