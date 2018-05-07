@@ -93,7 +93,7 @@
 }
 
 /*
- * styles for passport-2018-10 campaigns
+ * styles for passport-2018 campaigns
  */
  
 .downton .jumbotron::after {
@@ -113,6 +113,9 @@
 .button-2 .jumbotron::after,
 .victoria .jumbotron::after {
     background: url(../img-passport-2018-02/Victoria.jpg) no-repeat center top / cover;
+}
+.jamestown .jumbotron::after {
+    background: url(../img-passport-2018/jamestown-ship.jpg) no-repeat center top / cover;
 }   
  
 @media screen and (min-width: 650px) {
@@ -124,4 +127,5 @@
   .button-1 .jumbotron,
   .button-2 .jumbotron,
   .victoria .jumbotron { text-align: left; }
+  .jamestown .jumbotron { text-align: right; }
 }

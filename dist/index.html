@@ -42,7 +42,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-      <h2 class="option_header"><?php echo $subHead; ?></h2>
+      <h2 class="option_header"><?php echo $subhead; ?></h2>
         <img id="passport_logo" src="assets/img/Passport_Station_Letters_WHITE_web.png">
         <h2 class="option_default">YOUR FAVORITES<br>
         YOUR CONVENIENCE</h2>
@@ -55,9 +55,13 @@
       <div class="row">
         <div class="col-sm-12">
           <h1><?php echo $headline; ?></h1>
-          <p class="lead">With KLRN Passport, you can access past episodes of your favorite PBS programs whenever you want using your computer, smartphone, tablet, AppleTV or Roku. See full seasons of Victoria, Poldark, Finding Your Roots, the Great British Baking Show, Call the Midwife, Home Fires, Endeavour, The Tunnel and Downton Abbey. Catch up on American Experience, NOVA and Nature.</p>
+          
+          <p class="lead">With KLRN Passport, you can access past episodes of your favorite PBS programs whenever you want using your computer, smartphone, tablet, AppleTV or Roku. See full seasons of Victoria, Poldark, Call the Midwife, Finding Your Roots, the Great British Baking Show, Endeavour, The Tunnel and Downton Abbey. Catch up on Jamestown, Unforgotten, American Experience, NOVA and Nature.</p>
+          
           <p class="lead">Get access to KLRN Passport for a year with a one-time contribution of $60. Or sign up to be a KLRN sustainer and receive Passport uninterrupted at $5 a month. How you give is up to you!</p>
-        </div>
+          
+        </div><!-- .col-sm-12 -->
+        
         <div class="col-md-4">
           <h2>Get Started</h2>
           <p>Become a KLRN member and get instant access to extended on-demand programs, when you want.</p>
@@ -65,16 +69,19 @@
             <a class="btn btn-primary" href="<?php echo $linkConversion; ?>" role="button">Donate Now &raquo;</a>
           </p>
         </div>
+        
         <div class="col-md-4">
           <h2>Learn More</h2>
           <p>KLRN Passport is an added benefit for valued donors of public television. Find out more about this benefit.</p>
           <p><a class="btn btn-primary" href="http://www.klrn.org/passport/" role="button">Learn More &raquo;</a></p>
        </div>
+       
         <div class="col-md-4">
           <h2>Contact Us</h2>
           <p>Still have questions about KLRN membership or Passport? Please contact us during business hours.</p>
           <p><a class="btn btn-primary" href="mailto:members@klrn.org?cc=pr@klrn.org&subject=KLRN%20Passport" role="button">Contact Us &raquo;</a></p>
         </div>
+        
       </div><!-- .row -->      
     </div> <!-- #main.container -->   
     
@@ -106,78 +113,89 @@
           bodyClasses = 'passport';
           
       var custom_content = {
-            'Selfridge': [
-                'endless entertainment'
-            ],
-            'Koko': [
-                'endless discovery'
-            ],
-            'Antiques': [
-                'endless discovery'
-            ],
-            'Ray-Charles': [
-                'endless entertainment'
-            ],
-            'Hawk': [
-              'endless exploration'
-            ],
-            'Downton': [
-                'endless entertainment'
-            ],
-            'Dancers': [
-                'endless inspiration'
-            ],
-            'Endeavour': [
-                'endless entertainment',
-                'Because good TV should be available whenever you want it'
-            ], 
-            'Vietnam-War': [
-                'endless exploration',
-                'Because sometimes you don\'t want to wait for the next episode'
-            ],            
-            'Great-British-Baking-Show': [
-                'endless entertainment',
-                'Great TV available on YOUR time'
-            ],
-            'Call-the-Midwife': [
-                'endless entertainment',
-                'Because good TV should be available whenever you want it'
-            ],
-            'Home-Fires': [
-                'endless entertainment',
-                'Because sometimes you need to watch it again'
-            ],
-            'The-Tunnel': [
-                'endless entertainment',
-                'Because sometimes you need to watch it again'
-            ],
-            'Poldark': [
-                'endless entertainment',
-                'Because it is worth watching again'
-            ],
-            'Origami': [
-                'endless inspiration',
-                'Because good TV should be available whenever you want it'
-            ],
-            'Victoria': [
-                'endless inspiration',
-                'Because sometimes you need to watch it again'
-            ]
-          };
+            'Selfridge': {
+                'subhead': 'endless entertainment'
+            },
+            'Koko': {
+                'subhead': 'endless discovery'
+            },
+            'Antiques': {
+                'subhead': 'endless discovery'
+            },
+            'Ray-Charles': {
+                'subhead': 'endless entertainment'
+            },
+            'Hawk': {
+                'subhead': 'endless exploration'
+            },
+            'Downton': {
+                'subhead': 'endless entertainment'
+            },
+            'Dancers': {
+                'subhead': 'endless inspiration'
+            },
+            'Endeavour': {
+                'subhead': 'endless entertainment',
+                'headline': 'Because good TV should be available whenever you want it'
+            }, 
+            'Vietnam-War': {
+                'subhead': 'endless exploration',
+                'headline': 'Because sometimes you don\'t want to wait for the next episode'
+            },            
+            'Great-British-Baking-Show': {
+                'subhead': 'endless entertainment',
+                'headline': 'Great TV available on YOUR time'
+            },
+            'Call-the-Midwife': {
+                'subhead': 'endless entertainment',
+                'headline': 'Because good TV should be available whenever you want it'
+            },
+            'Home-Fires': {
+                'subhead': 'endless entertainment',
+                'headline': 'Because sometimes you need to watch it again'
+            },
+            'The-Tunnel': {
+                'subhead': 'endless entertainment',
+                'headline': 'Because sometimes you need to watch it again'
+            },
+            'Poldark': {
+                'subhead': 'endless entertainment',
+                'headline': 'Because it is worth watching again'
+            },
+            'Origami': {
+                'subhead': 'endless inspiration',
+                'headline': 'Because good TV should be available whenever you want it'
+            },
+            'Victoria': {
+                'subhead': 'endless inspiration',
+                'headline': 'Because sometimes you need to watch it again'
+            },
+            'Jamestown': {
+                'subhead': '',
+                'headline': 'Stream your favorite programs anytime, anywhere, on any device',
+                'graphGetAccess': 
+                    'Get access to KLRN Passport when you donate just $5 (or more) a month to KLRN.',
+                'graphGetAccessTEST': 
+                    'Get access to KLRN Passport when you donate just $60 a year (or more) to KLRN.'
+            }
+      };
           
           var subhead = 'endless entertainment';
-          var headline = 'On-demand access to quality PBS programs. On your schedule.';
+          var headline = 'Stream your favorite programs anytime, anywhere, on any device';
+          console.log('Y');
 
       result = params.map(function(param) {
-        var label = param.split('=')[0],
-            value = param.split('=')[1],
-            i = sorting.indexOf(label);
+        var label = param.split('=')[0];
+        var value = param.split('=')[1];
+        var i = sorting.indexOf(label);
             
         if (label === 'utm_content') {
-		    if (custom_content[value]) {
-				if (custom_content[value][0]) subhead = custom_content[value][0];
-				if (custom_content[value][1]) console.log('2 READ'); headline = custom_content[value][1];
-			}
+		  if (custom_content[value]) {
+			if (custom_content[value]['subhead']) 
+                { subhead = custom_content[value]['subhead']; }
+			if (custom_content[value]['headline']) 
+                { console.log('2 READ'); headline = custom_content[value]['headline']; }
+		  }
         }
         
         sorting[i] = '';
@@ -191,6 +209,13 @@
       document.getElementsByTagName('body')[0].className += ' ' + bodyClasses; 
       document.querySelector('.jumbotron h2').innerHTML = subhead;
       document.querySelector('#main h1').innerHTML = headline;
+      
+      if (document.querySelector('body.jamestown')) {
+        var graph = document.querySelectorAll('p.lead')[1];
+        if (document.querySelector('body.cpc_a')) graph.innerHTML = custom_content.Jamestown.graphGetAccess; 
+        if (document.querySelector('body.cpc_b')) graph.innerHTML = custom_content.Jamestown.graphGetAccessTEST;      
+      }
+      
     }());
   </script> 
      
