@@ -50,15 +50,17 @@
       </div>
     </div>
 
+    <!-- Main container -->    
     <div id="main" class="container">
-      <!-- Example row of columns -->
       <div class="row">
         <div class="col-sm-12">
           <h1><?php echo $headline; ?></h1>
           
-          <p class="lead">With KLRN Passport, you can access past episodes of your favorite PBS programs whenever you want using your computer, smartphone, tablet, AppleTV or Roku. See full seasons of Victoria, Poldark, Call the Midwife, Finding Your Roots, the Great British Baking Show, Endeavour, The Tunnel and Downton Abbey. Catch up on Jamestown, Unforgotten, American Experience, NOVA and Nature.</p>
+          <p class="lead">With KLRN Passport, you can access past episodes of your favorite PBS programs whenever you want using your computer, smartphone, tablet, AppleTV or Roku. See full seasons of Poldark, The Durrells in Corfu, Victoria, The Great British Baking Show, Endeavour, The Tunnel and Downton Abbey. Catch up on Jamestown, the Frankie Drake Mysteries, Unforgotten, American Experience, NOVA and Nature.</p>
           
-          <p class="lead">Get access to KLRN Passport for a year with a one-time contribution of $60. Or sign up to be a KLRN sustainer and receive Passport uninterrupted at $5 a month. How you give is up to you!</p>
+          <!--<p class="lead">Get access to KLRN Passport for a year with a one-time contribution of $60. Or sign up to be a KLRN sustainer and receive Passport uninterrupted at $5 a month. How you give is up to you!</p>-->
+          
+          <p class="lead">Get access to KLRN Passport when you donate just $5 (or more) a month to KLRN.</p>
           
         </div><!-- .col-sm-12 -->
         
@@ -83,7 +85,7 @@
         </div>
         
       </div><!-- .row -->      
-    </div> <!-- #main.container -->   
+    </div> <!-- #main.container -->
     
     <!-- ================================== -->
     <!-- END CUT HERE FOR INDEX.PHP PARTIAL --> 
@@ -92,7 +94,7 @@
     <footer>
       <div class="container">
         <hr>
-        <p>&copy; KLRN 2016</p>
+        <p>&copy; KLRN 2018</p>
       </div>  
     </footer>
 
@@ -160,8 +162,12 @@
             },
             'Poldark': {
                 'subhead': 'endless entertainment',
-                'headline': 'Because it is worth watching again'
+                'headline': ''
             },
+            'Durrells': {
+                'subhead': 'endless entertainment',
+                'headline': ''
+            },            
             'Origami': {
                 'subhead': 'endless inspiration',
                 'headline': 'Because good TV should be available whenever you want it'
@@ -179,6 +185,13 @@
                     'Get access to KLRN Passport when you donate just $60 a year (or more) to KLRN.'
             }
       };
+      
+      custom_content['Great-British-Baking-Show'] = {
+        'subhead': '',
+        'headline': 'Stream your favorite programs anytime, anywhere, on any device',
+        'graphGetAccess': 
+            'Get access to KLRN Passport when you donate just $5 (or more) a month to KLRN.'
+      }
           
           var subhead = 'endless entertainment';
           var headline = 'Stream your favorite programs anytime, anywhere, on any device';

@@ -386,8 +386,7 @@
     "buttons.less",
     "thumbnails.less",
     "list-group.less",
-    "component-animations.less",
-    "modals.less"
+    "component-animations.less"
   ],
   "js": [
     "alert.js",
@@ -403,5 +402,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "<none>"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=a3f32028ddb7b1db222834cde649d71d"
 }

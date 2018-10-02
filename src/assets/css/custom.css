@@ -116,6 +116,9 @@
 }
 .jamestown .jumbotron::after {
     background: url(../img-passport-2018/jamestown-ship.jpg) no-repeat center top / cover;
+}
+.durrells .jumbotron::after {
+    background: url(../img-passport-2018/durrells.jpg) no-repeat 74% top / cover;
 }   
  
 @media screen and (min-width: 650px) {
@@ -128,4 +131,5 @@
   .button-2 .jumbotron,
   .victoria .jumbotron { text-align: left; }
   .jamestown .jumbotron { text-align: right; }
+  .durrells .jumbotron { text-align: left; }  
 }
