@@ -14,8 +14,8 @@ The hero's image and text, and the main headline, are dynamically customized bas
 ### Live page 
 (This version is sliced into PHP, and the UTM values get saved to a cookie)  
 
-- http://pbs.klrn.org/passport/
-- http://pbs.klrn.org/passport/?utm_source=facebook&utm_medium=cpc&utm_campaign=Passport-2017&utm_content=Victoria
+- https://pbs.klrn.org/passport/
+- https://pbs.klrn.org/passport/?utm_source=facebook&utm_medium=cpc&utm_campaign=Passport-2017&utm_content=Victoria
 
 ### Start
 
