@@ -29,9 +29,11 @@
 .hawk .jumbotron::after {
     background: url(../img-passport-launch/hawk.jpg) no-repeat center center / cover;
 }  
+/*
 .downton .jumbotron::after {
     background: url(../img-passport-launch/downton.jpg) no-repeat center center / cover;
-}  
+} 
+*/ 
 .dancers .jumbotron::after {
     background: url(../img-passport-launch/dancers.jpg) no-repeat center center / cover;
 }  
@@ -42,7 +44,7 @@
   .antiques .jumbotron { text-align: left; }
   .ray-charles .jumbotron { text-align: right; }
   .hawk .jumbotron { text-align: left; }
-  .downton .jumbotron { text-align: left; }
+  /* .downton .jumbotron { text-align: left; } */
   .dancers .jumbotron { text-align: left; }
 }
 
@@ -95,10 +97,12 @@
 /*
  * styles for passport-2018 campaigns
  */
- 
+
+/* 
 .downton .jumbotron::after {
     background: url(../img-passport-2018-02/Downton.jpg) no-repeat center top / cover;
-} 
+}
+*/ 
 .finding-your-roots .jumbotron::after {
     background: url(../img-passport-2018-02/Finding-Your-Roots.jpg) no-repeat center top / cover;
 }
@@ -122,7 +126,7 @@
 }   
  
 @media screen and (min-width: 650px) {
-  .downton .jumbotron { text-align: right; }  
+  /* .downton .jumbotron { text-align: right; } */  
   .finding-your-roots .jumbotron { text-align: left; }
   .nova .jumbotron { text-align: left; }
   .poldark .jumbotron { text-align: right; }
